@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapp"
+    android:orientation="vertical"
+    tools:context=".Score"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:weightSum="3"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:text="Very Good!"
+            android:textColor="@color/colorText"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/image_description"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:src="@drawable/img10"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_weight="1.5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="SCORE"
+            android:textSize="56dp"
+            android:textColor="@color/colorText"
+            android:layout_gravity="center"
+            android:fontFamily="@font/fredoka_one"/>
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="0"
+            android:textSize="56dp"
+            android:textColor="@color/colorText"
+            android:layout_gravity="center"
+            android:fontFamily="@font/fredoka_one"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.5"
+        android:weightSum="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="PLAY AGAIN"
+            android:textSize="36dp"
+            android:onClick="play_again"
+            android:layout_gravity="center"
+            android:background="@drawable/bgbtn"/>
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorText"
+            android:gravity="center"
+            android:text="Back To Home"
+            android:textSize="24dp"
+            android:layout_gravity="center"
+            android:onClick="home"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

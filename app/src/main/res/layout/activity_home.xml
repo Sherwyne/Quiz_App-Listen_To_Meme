@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapp"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/image_description"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cat"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LISTEN TO ME!ME"
+        android:textSize="56dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredoka_one"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="PLAY"
+        android:textSize="36dp"
+        android:onClick="play_quiz"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/bgbtn"/>
+
+
+</LinearLayout>
